@@ -1,0 +1,77 @@
+{% load static %}
+<html>
+<head>
+<title>Secure Data Retrieval</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1><font color="orange" size=5>Efficient Secure Data Retrieval on Cloud using Multi-Stage
+Authentication and Optimized Blowfish Algorithm</font></h1>
+	  <marquee><font color="pink" size=4>Secure Data Retrieval</font></marquee>
+    </div>
+   
+  
+    </div>
+  </div>
+  <div id="menu">
+     <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'User' %}">User</a></li>
+      <li><a href="{% url 'Register' %}">Register Here</a></li>
+      
+   </ul>
+  </div>
+  <div class="entry">
+   <br/><br/><br/>
+	<font size="" color="white"><center>{{ data }}</center></font>
+	 <br>
+	 
+	
+	{% csrf_token %}
+	<br><br>
+	<TABLE align=center width="100%" class="notepad">
+		<tr><td>
+		<a href="{% url 'AuthImageAction' %}?imgname=1.jpg"><img src="{% static 'auth/1.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 <td>
+		<a href="{% url 'AuthImageAction' %}?imgname=2.jpg"><img src="{% static 'auth/2.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 <td>
+		<a href="{% url 'AuthImageAction' %}?imgname=3.jpg"><img src="{% static 'auth/3.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 </tr>
+
+		 <tr><td>
+		<a href="{% url 'AuthImageAction' %}?imgname=4.jpg"><img src="{% static 'auth/4.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 <td>
+		<a href="{% url 'AuthImageAction' %}?imgname=5.jpg"><img src="{% static 'auth/5.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 <td>
+		<a href="{% url 'AuthImageAction' %}?imgname=6.jpg"><img src="{% static 'auth/6.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 </tr>
+
+		 <tr><td>
+		<a href="{% url 'AuthImageAction' %}?imgname=7.jpg"><img src="{% static 'auth/7.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 <td>
+		<a href="{% url 'AuthImageAction' %}?imgname=8.jpg"><img src="{% static 'auth/8.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 <td>
+		<a href="{% url 'AuthImageAction' %}?imgname=9.jpg"><img src="{% static 'auth/9.jpg' %}" alt="" width="200" height="200"/>
+		 </td>
+		 </tr>
+
+
+		  </TABLE>
+		
+</form>
+</div>
+
+</body>
+</html>
